@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection Request</title>
+  <link rel="stylesheet" href="collectionrequest-info.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+  <div class="sidebar-top">
+    <div class="logo-text">
+      <div class="lims-title">LIMS</div>
+      <div class="lims-subtitle">Laboratory Information<br>Management System</div>
+    </div>
+
+    <div class="nav-section">
+      <input type="text" class="search" placeholder="Search...">
+      <div class="nav-menu">
+        <div class="nav-item active">Dashboard</div>
+        <div class="nav-item">Map</div>
+        <div class="nav-item">My Profile</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="logout">Logout</button>
+</aside>
+
+
+    <main class="main-content">
+      <div class="page-title-box">
+        <h2 class="page-title">Collection Request : (Sample Id)</h2>
+      </div>
+
+      <div class="request-box">
+        <!-- Farmer Info Block -->
+        <div class="farmer-info">
+          <div class="icon">
+            <img src="https://img.icons8.com/ios-filled/50/4caf50/user.png" alt="User Icon">
+          </div>
+          <div class="details">
+            <p>Farmer Name</p>
+            <p>Farmer Phone Number</p>
+            <p>Farmer Id/Registration No</p>
+            <p>Collection Location (Village)</p>
+            <p>Requested Test(s): e.g. "NPK + pH"</p>
+          </div>
+        </div>
+
+        <!-- Address & Info Block -->
+        <div class="address-block">
+          <p>Collection Location (Full Address)</p>
+          <p>GPS Coordinates (with 'Open in Maps' link)</p>
+          <p>Landmark / Special Instructions</p>
+          <p>Crop Type</p>
+          <p>Soil Type</p>
+          <p>Requested Tests</p>
+          <p>Number of Samples to Collect</p>
+          <p>Preferred Collection Date / Time</p>
+        </div>
+
+        <div class="action-buttons">
+            <button class="primary-btn">
+              Mark as Collected and Delivered 
+            </button>
+          
+            <button class="secondary-btn">
+              Unable to Collect
+            </button>
+        </div>
+          
+
+        <!-- Accept Footer -->
+        <div class="footer-bar">
+            <button class="footer-btn">Accept</button>
+            <button class="footer-btn">Next</button>
+        </div>
+          
+      </div>
+    </main>
+  </div>
+
+  <script src="collectionrequest-info.js"></script>
+</body>
+</html>

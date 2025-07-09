@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LIMS Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+  <div class="sidebar-top">
+    <div class="logo-text">
+      <div class="lims-title">LIMS</div>
+      <div class="lims-subtitle">Laboratory Information<br>Management System</div>
+    </div>
+
+    <div class="nav-section">
+      <input type="text" class="search" placeholder="Search...">
+      <div class="nav-menu">
+        <div class="nav-item active">Dashboard</div>
+        <div class="nav-item">Map</div>
+        <div class="nav-item">My Profile</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="logout">Logout</button>
+</aside>
+
+
+
+    <main class="main-content">
+      <div class="welcome-box">
+        <h1>Welcome, <strong>[Field Officer]</strong>, (<strong>Officer Id</strong>)</h1>
+      </div>
+
+      <div class="recap-box">
+        <h2>Quick Recap :</h2>
+        <p>
+          Sample Collection Requests (From Farmer): <strong>12</strong><br/>
+          Avg. Collection Time: <strong>3 hrs/sample</strong><br/>
+          Samples Collected: <strong>2</strong>
+        </p>
+      </div>
+
+      <div class="action-buttons">
+        <button onclick="showAlert('View Requests')">View Requests</button>
+        <button onclick="showAlert('Soil Samples Delivered')">Soil Samples Delivered</button>
+        <button onclick="showAlert('Performance Overview')">Performance Overview</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

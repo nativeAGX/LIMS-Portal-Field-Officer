@@ -1,0 +1,72 @@
+@import url('../Field Officer Dashboard/dashboard.css');
+
+/* Title */
+.page-title-box {
+  background-color: #e9f5ec;
+  padding: 16px 24px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center; /* ✅ Center the text */
+}
+
+.page-title {
+  margin: 0;
+  font-size: 24px;       /* ✅ Bigger */
+  font-weight: 500;      /* ✅ Slightly bold (or use 700 for full bold) */
+  color: black;
+}
+
+/* Sample list container */
+.sample-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Sample card style */
+.sample-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sample-info {
+  flex: 1;
+  font-size: 15px;
+}
+
+.sample-info span {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #444;
+}
+
+.sample-date {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.details-btn {
+  background-color: white;
+  border: 2px solid #4caf50;
+  color: #4caf50;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.details-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}

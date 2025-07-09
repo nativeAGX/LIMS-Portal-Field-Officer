@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Overview</title>
+  <link rel="stylesheet" href="performance-overview.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+  <div class="sidebar-top">
+    <div class="logo-text">
+      <div class="lims-title">LIMS</div>
+      <div class="lims-subtitle">Laboratory Information<br>Management System</div>
+    </div>
+
+    <div class="nav-section">
+      <input type="text" class="search" placeholder="Search...">
+      <div class="nav-menu">
+        <div class="nav-item active">Dashboard</div>
+        <div class="nav-item">Map</div>
+        <div class="nav-item">My Profile</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="logout">Logout</button>
+</aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="page-title-box">
+        <h2 class="page-title">Performance Overview</h2>
+      </div>
+
+      <div class="info-box">
+        <!-- Officer Summary -->
+        <div class="summary-card">
+          <div class="user-icon">
+            <img src="https://img.icons8.com/ios-filled/50/4caf50/user.png" alt="User Icon">
+          </div>
+          <div class="summary-details">
+            <p>Field Officer Name:</p>
+            <p>Officer Id:</p>
+            <p>Officer Phone No.:</p>
+            <p>Officer Email Id:</p>
+          </div>
+        </div>
+
+        <!-- Simple Dropdown Filter -->
+        <div class="stats-section">
+          <select id="monthSelect" class="month-select">
+            <option value="" disabled selected>Select Month</option>
+            <option value="jul25">July 2025</option>
+            <option value="jun25">June 2025</option>
+            <option value="may25">May 2025</option>
+            <option value="apr25">April 2025</option>
+            <option value="mar25">March 2025</option>
+            <option value="feb25">February 2025</option>
+            <option value="jan25">January 2025</option>
+            <option value="dec24">December 2024</option>
+            <option value="nov24">November 2024</option>
+            <option value="oct24">October 2024</option>
+            <option value="sep24">September 2024</option>
+            <option value="aug24">August 2024</option>
+            <option value="jul24">July 2024</option>
+          </select>
+
+
+          <div class="stats" id="statsContent">
+            <p>Please select a month to view performance data.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Done Button -->
+      <div class="footer-bar">
+        <button class="footer-btn">Done</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="performance-overview.js"></script>
+</body>
+</html>
